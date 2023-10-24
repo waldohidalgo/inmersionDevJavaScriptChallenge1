@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Conversor de Monedas y Temperaturas</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./stylesMonedas.css" />
+    <link rel="stylesheet" href="./stylesTemperatura.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <a href="https://www.aluracursos.com/" target="_blank">
+        <img
+          src="https://www.aluracursos.com/assets/img/home/alura-logo.1686744883.svg"
+          alt=""
+          class="alura-latam-logo"
+      /></a>
+      <h1 class="page-title">Conversor de monedas</h1>
+      <img
+        src="https://user-images.githubusercontent.com/121910576/257302088-d2a9edb6-75e5-4118-aaba-6f53da7715dc.png"
+        class="page-logo"
+        alt=""
+      />
+    </div>
+    <div class="contenedor_nombre">
+      <label for="contenedor_nombre_input" class="contenedor_nombre__titulo"
+        >Ingresa tu Nombre en la casilla de abajo
+        <img
+          style="width: 2rem; border-radius: 50%; margin-bottom: -5px"
+          src="./icons-abajo.gif"
+      /></label>
+      <input
+        type="text"
+        placeholder="Ingresa tu Nombre Aquí"
+        id="contenedor_nombre_input"
+      />
+    </div>
+    <div class="contenedor_monedas">
+      <div class="contenedor_monedas__input">
+        <p class="contenedor_monedas__input_titulo">
+          Ingresa Monto a Convertir:
+        </p>
+        <input
+          class="contenedor_monedas__input__input"
+          type="number"
+          min="0"
+          value="100"
+        />
+      </div>
+      <div class="contenedor_monedas__selectMoneda">
+        <p class="contenedor_monedas__selectMoneda__titulo">
+          Selecciona Conversión Deseada:
+        </p>
+        <div class="contenedor_monedas__selectMoneda_selectores">
+          <div class="contenedor_monedas__selectMoneda_selectores__options">
+            <label for="monedasDesde" class="selectmoneda">Desde:</label>
+            <select name="selectmoneda" id="monedasDesde">
+              <option value="Selecciona Desde" selected hidden>
+                Selecciona Desde
+              </option>
+              <option value="USD">USD</option>
+              <option value="CLP">CLP</option>
+              <option value="EURO">EURO</option>
+              <option value="BITCOIN">BITCOIN</option>
+            </select>
+          </div>
+          <div class="contenedor_monedas__selectMoneda_selectores__options">
+            <label for="monedasHacia" class="selectmoneda">Hacia:</label>
+            <select name="selectmoneda" id="monedasHacia">
+              <option value="Selecciona Hacia" selected hidden>
+                Selecciona Hacia
+              </option>
+              <option value="USD">USD</option>
+              <option value="CLP">CLP</option>
+              <option value="EURO">EURO</option>
+              <option value="BITCOIN">BITCOIN</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <button
+        id="convertir_monedas"
+        title="Haz click aquí para convertir monedas"
+      >
+        ¡Convertir! 💰
+      </button>
+    </div>
+
+    <div class="container" style="border-top: 1px solid white">
+      <a href="https://www.aluracursos.com/" target="_blank">
+        <img
+          src="https://www.aluracursos.com/assets/img/home/alura-logo.1686744883.svg"
+          alt=""
+          class="alura-latam-logo"
+      /></a>
+      <h1 class="page-title">Conversor de Temperaturas</h1>
+      <img
+        src="https://user-images.githubusercontent.com/121910576/257302088-d2a9edb6-75e5-4118-aaba-6f53da7715dc.png"
+        class="page-logo"
+        alt=""
+      />
+      <div class="contenedor_temperaturas">
+        <div class="contenedor_temperaturas__input">
+          <p class="contenedor_temperaturas__input_titulo">
+            Ingresa Temperatura a Convertir:
+          </p>
+          <input
+            class="contenedor_temperaturas__input__input"
+            type="number"
+            min="0"
+            value="100"
+          />
+        </div>
+        <div class="contenedor_temperaturas__selectTemperatura">
+          <p class="contenedor_temperaturas__selectTemperatura__titulo">
+            Selecciona Conversión Deseada:
+          </p>
+          <div class="contenedor_temperaturas__selectTemperatura_selectores">
+            <div
+              class="contenedor_temperaturas__selectTemperatura_selectores__options"
+            >
+              <label for="temperaturasDesde" class="selecttemperatura"
+                >Desde:</label
+              >
+              <select name="selecttemperatura" id="temperaturasDesde">
+                <option value="Selecciona Desde" selected hidden>
+                  Selecciona Desde
+                </option>
+                <option value="CELSIUS">CELSIUS</option>
+                <option value="FAHRENHEIT">FAHRENHEIT</option>
+                <option value="KELVIN">KELVIN</option>
+              </select>
+            </div>
+            <div
+              class="contenedor_temperaturas__selectTemperatura_selectores__options"
+            >
+              <label for="temperaturasHacia" class="selecttemperatura"
+                >Hacia:</label
+              >
+              <select name="selecttemperatura" id="temperaturasHacia">
+                <option value="Selecciona Hacia" selected hidden>
+                  Selecciona Hacia
+                </option>
+                <option value="CELSIUS">CELSIUS</option>
+                <option value="FAHRENHEIT">FAHRENHEIT</option>
+                <option value="KELVIN">KELVIN</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <button
+          id="convertir_temperaturas"
+          title="Haz click aquí para convertir temperaturas"
+        >
+          ¡Convertir! 🌡️
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <a href="https://linktr.ee/waldohidalgo" target="_blank"
+        ><img src="./FirmaWaldo.png" width="20%"
+      /></a>
+      <p>
+        <span style="font-weight: 700">Conversores</span> desarollados 100% por
+        <a
+          href="https://linktr.ee/waldohidalgo"
+          style="color: yellow; font-family: carter"
+          >Waldo Hidalgo Oyarce</a
+        >
+      </p>
+      <div class="redes sociales">
+        <a
+          href="https://www.linkedin.com/in/waldo-hidalgo-oyarce/"
+          target="_blank"
+          ><i class="fa fa-linkedin fa-xl"></i
+        ></a>
+        <a href="https://github.com/waldohidalgo/" target="_blank"
+          ><i class="fa fa-github"></i
+        ></a>
+        <a href="https://www.instagram.com/clasestutoriaswaldo/" target="_blank"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/waldohidalgooyarcej" target="_blank"
+          ><i class="fa fa-facebook"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="./programmingMonedas.js"></script>
+    <script src="./programmingTemperaturas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

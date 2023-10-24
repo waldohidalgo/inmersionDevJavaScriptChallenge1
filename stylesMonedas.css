@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "carter";
+  src: url("./CarterOne-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-color: rgb(2, 2, 44);
+
+  background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Background.png");
+
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 250px;
+}
+
+.alura-latam-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+body > img {
+  margin: 0 10px;
+}
+
+img {
+  max-height: 250px;
+}
+
+.contenedor_monedas {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .contenedor_monedas__input {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    .contenedor_monedas__input_titulo {
+      font-family: "carter";
+      color: white;
+      font-size: 2rem;
+      -webkit-text-stroke: 2px black;
+      margin-bottom: 1rem;
+    }
+    .contenedor_monedas__input__input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 15px;
+    }
+  }
+}
+.contenedor_monedas::before {
+  content: "";
+  background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Convers%C3%A3o+1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.contenedor_monedas__selectMoneda {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  .selectmoneda {
+    font-family: "carter";
+    color: white;
+    font-size: 1.5rem;
+    -webkit-text-stroke: 1.5px red;
+    margin-bottom: 1rem;
+  }
+
+  #monedasDesde,
+  #monedasHacia {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+  }
+}
+
+#convertir_monedas {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  padding: 0.5rem;
+  border-radius: 15px;
+  border: 2px solid black;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: yellow;
+  transition: transform 1s;
+  box-shadow: 13px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+#convertir_monedas:hover {
+  background-color: red;
+  color: white;
+  transform: scale(1.1);
+}
+
+.contenedor_monedas__selectMoneda__titulo {
+  font-family: "carter";
+  color: white;
+  font-size: 2rem;
+  -webkit-text-stroke: 2px black;
+  margin-bottom: 1rem;
+}
+
+.contenedor_monedas__selectMoneda_selectores {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  @media screen and (min-width: 489px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.contenedor_monedas__selectMoneda_selectores__options {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor_nombre {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#contenedor_nombre_input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 15px;
+}
+.contenedor_nombre__titulo {
+  width: 80%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "carter";
+  text-decoration: underline;
+  color: white;
+  font-size: 1.5rem;
+}
