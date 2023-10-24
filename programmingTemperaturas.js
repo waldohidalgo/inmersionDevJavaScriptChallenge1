@@ -10,12 +10,6 @@
 
   const nombre = document.getElementById("contenedor_nombre_input");
 
-  inputTemperatura.addEventListener("input", (e) => {
-    if (e.target.value < 0) {
-      e.target.value = "";
-    }
-  });
-
   function convertirTemperaturas(
     opcionSeleccionadaDesde,
     opcionSeleccionadaHacia,
